@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Booking</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+       <style>
+
+        body {
+
+  font-size: 1.25em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+li {
+  margin-top: 1em;
+}
+
+label {
+  font-weight: bold;
+}
+*{
+  background-color: bisque;
+  background-image: url("https://motopress.com/wp-content/uploads/2020/04/appointment-booking-plugin-915x524.jpg");
+}
+form{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(216, 57, 4);
+        width: 400px;
+        height: 100%;
+        padding: 30px;
+        margin: auto;
+        color:solid black;
+        border: 3px solid black;
+       }
+       #next,#prev{
+        background-color: chartreuse;
+        color: blue;
+        font-size: 15px;
+        width:70px;
+        height:25px;
+        border-radius: 5px;
+       }
+       #submit{
+        background-color:burlywood;
+        color: dark brown;
+        float: right;
+        width: 80px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 5px;
+       }
+        </style>
+        </head>
+        <body>
+          <h1 style="font-family: cursive; color:brown; font-size: 35px;text-align: center;">Book Your Slot </h1>
+            <form>
+                
+                <div class="container">
+                    <ul>
+                      <li>
+
+                        <input type="checkbox" id="option"><label for="option">Hair Services</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Hair Cut</label></li>
+                          <li><label><input type="checkbox" class="subOption">Hair Spa</label></li>
+                          <li><label><input type="checkbox" class="subOption">Hair Styling</label></li>
+                          <li><label><input type="checkbox" class="subOption">Hair Color</label></li>
+                          <li><label><input type="checkbox" class="subOption">Hair Treatment</label></li>
+                          <li><label><input type="checkbox" class="subOption">Blow Dry</label></li>
+                        </ul> <br>
+
+                        <input type="checkbox" id="option"><label for="option">Eye Care</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Eye Brows</label></li>
+                          <li><label><input type="checkbox" class="subOption">Eye Brow Wax</label></li>
+                          <li><label><input type="checkbox" class="subOption">Eye Lashes</label></li>
+                          <li><label><input type="checkbox" class="subOption">Upper Lip</label></li>
+                        </ul><br>
+
+                        <input type="checkbox" id="option"><label for="option">Nail Services</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Manicure</label></li>
+                          <li><label><input type="checkbox" class="subOption">Nail Repair</label></li>
+                          <li><label><input type="checkbox" class="subOption">File & Paint</label></li>
+                          <li><label><input type="checkbox" class="subOption">Refils</label></li>
+                        </ul><br>
+
+                        <input type="checkbox" id="option"><label for="option">Foot Care</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Pedicure</label></li>
+                          <li><label><input type="checkbox" class="subOption">Nail Polish</label></li>
+                          <li><label><input type="checkbox" class="subOption">Gel Toes</label></li>
+                        </ul><br>
+
+                        <input type="checkbox" id="option"><label for="option">Waxing</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">1/2 leg lower</label></li>
+                          <li><label><input type="checkbox" class="subOption">1/2 Leg Upper</label></li>
+                          <li><label><input type="checkbox" class="subOption">Full leg</label></li>
+                          <li><label><input type="checkbox" class="subOption">Full hands</label></li>
+                        </ul><br>
+
+                        <input type="checkbox" id="option"><label for="option">Body Massage</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Hands </label></li>
+                          <li><label><input type="checkbox" class="subOption"> leg Lower</label></li>
+                          <li><label><input type="checkbox" class="subOption">Leg Upper</label></li>
+                          <li><label><input type="checkbox" class="subOption">Shoulder</label></li>
+                          <li><label><input type="checkbox" class="subOption">Back Bone</label></li>
+                        </ul><br>
+                        
+                        <input type="checkbox" id="option"><label for="option">Make up</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Cleanse,Makeup &Lashes</label></li>
+                          <li><label><input type="checkbox" class="subOption">Cleanse & Makeup</label></li>
+                          <li><label><input type="checkbox" class="subOption">Tanning</label></li>
+                          <li><label><input type="checkbox" class="subOption">Face Bleach</label></li>
+                          <li><label><input type="checkbox" class="subOption">Hand Bleach</label></li>
+                          <li><label><input type="checkbox" class="subOption">Feet Bleach</label></li>
+                        </ul><br>
+
+                        <input type="checkbox" id="option"><label for="option">Bridal Pakage</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Diamond Bleach</label></li>
+                          <li><label><input type="checkbox" class="subOption">Diamond Facial</label></li>
+                          <li><label><input type="checkbox" class="subOption"> Threading</label></li>
+                          <li><label><input type="checkbox" class="subOption">UpperLips & Forehead</label></li>
+                          <li><label><input type="checkbox" class="subOption">Full body waxing</label></li>
+                          <li><label><input type="checkbox" class="subOption">Manicure</label></li>
+                          <li><label><input type="checkbox" class="subOption">Pedicure</label></li>
+                        </ul><br>
+
+                        <input type="checkbox" id="option"><label for="option">Mehandi</label>
+                        <ul>
+                          <li><label><input type="checkbox" class="subOption">Party</label></li>
+                          <li><label><input type="checkbox" class="subOption">Engagement</label></li>
+                          <li><label><input type="checkbox" class="subOption">Bridal</label></li>
+                          <li><label><input type="checkbox" class="subOption">Festival</label></li>
+                        </ul>
+                        
+                      </li>
+                    </ul>
+                   
+                  </div>
+
+
+
+                <p align="left">
+                    <input type="button" id="prev" value="Previous" onclick="window.open('file:///C:/Users/parim/OneDrive/Desktop/MiniProj/Booknext1.html');">
+                </p>
+
+                <input type="submit" id="submit" onclick="submit()">
+
+
+            <script>
+                var checkboxes = document.querySelectorAll('input.subOption');
+                var checkall = document.getElementById('option');
+
+for(var i=0; i<checkboxes.length; i++) {
+  checkboxes[i].onclick = function() {
+    var checkedCount = document.querySelectorAll('input.subOption:checked').length;
+
+    checkall.checked = checkedCount > 0;
+    
+  }
+}
+
+checkall.onclick = function() {
+  for(var i=0; i<checkboxes.length; i++) {
+    checkboxes[i].checked = this.checked;
+  }
+}
+ submit.onclick=function(){
+  if(checkall.checked>0 ){
+  alert("your slot has been booked.");
+}
+}
+
+            </script>
+        </body>
+        
+        </html>

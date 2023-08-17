@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhikya's Beauty Parlor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+   <style>
+      * {box-sizing: border-box;
+      background-image: url("https://img.freepik.com/free-photo/top-view-assortment-make-up-beauty-products_23-2148620013.jpg");
+      opacity: 1.5;
+    
+     overflow:visible;
+     background-attachment: fixed;
+     font-weight: bold;
+      }
+
+      .heading {
+       float:left;
+        margin:10px;
+        
+      }
+      
+      body {font-family: Verdana, sans-serif; margin:10px;
+      }
+      
+      .gallery {
+  width: 1000px;
+  margin: 0 auto;
+
+  position: absolute;
+}
+
+.gallery__photo {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+
+  position: absolute;
+  transition: all 0.2s;
+  z-index: 10;
+  outline-offset: 20px;
+}
+
+.gallery__photo--p1 {
+  top: 0;
+  left: 5%;
+}
+
+.gallery__photo--p2 {
+  top: 30px;
+ left:30%;
+ 
+}
+
+.gallery__photo--p3 {
+  top: 60px;
+  left: 45%;
+}
+
+.gallery__photo--p4 {
+  top: 90px;
+  left: 60%;
+}
+.gallery__photo:hover {
+  outline: 1px  dashed #52bbdb;
+  box-shadow: 20px 20px 30px 20px rgba(178, 132, 216, 0.5);
+  transform: scale(1.5) translateY(-20px);
+  z-index: 20;
+  width: 630px;
+  height: 500px;
+  
+}
+.gallery:hover .gallery__photo:not(:hover) {
+  transform: scale(0.9);
+}
+
+/*navigation*/
+.navbar{
+   text-align: right;
+   margin-top:15px;
+   padding-top: 15px;
+   float: right;
+}
+.navbarright{
+   text-align: right;
+   justify-content: right;
+   float: right;
+}
+ul.nav{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:visible;
+        background-color:black;
+    }
+    li{
+        float:left;
+    }
+    li a, .dropbtn{
+        display: inline-block;
+        color:chartreuse;
+        font-size:20px;
+        text-align: center;
+        padding:10px 20px;
+        text-decoration: none;
+        font-weight: 800px;
+        overflow: hidden;
+    }
+    .active{
+        background-color: rgb(241, 217, 217);
+        color:rgb(30, 221, 13);
+    }
+    li a:hover, .dropdown:hover .dropbtn{
+        background-color: orange;
+        color:magenta;
+    }
+    .dropdown-content{
+        display:none;
+        position:absolute;
+        background-color:lightblue;
+        min-width:160px;
+        box-shadow:5px 8px 10px 0px rgb(70, 13, 177);
+    }
+    .dropdown-content a{
+        color:darkred;
+        padding:12px 16px;
+        text-decoration: none;
+        display:block;
+        text-align:center;
+        background-color: greenyellow;
+        font-weight: bold;
+    }
+    .dropdown-content a:hover{
+        background-color:gray;
+        color:chartreuse;
+    }
+    .dropdown:hover .dropdown-content{
+        display:block;
+    }
+    
+    .column {
+  float: left;
+  width: 32%;
+padding-top: 10px;
+  height: 300px; 
+  background-color: grey;
+  margin-left: 0px;
+  
+}
+
+
+.row{
+   width: 100%;
+  display: table;
+  clear: both;
+  background-color: rgb(241, 233, 233);
+}
+
+   /* portfolio*/
+   .portfolio{
+      text-align: justify;
+      align-items: center;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: 900px;
+      
+   }
+   pre{
+      font-size: 20px;
+      margin-left: -90px;
+   }
+   /* beauty service at home*/
+   .para{
+    text-align: justify;
+   }
+   </style>
+</head>
+<body>
+  <div class="heading">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPg78W5SnfQzMDH3pIoskZi9js8rs-KlaIPg&usqp=CAU" alt="Abhikhya's Beauty Parlor" width="100px" height="100px"/>
+      </div>
+<h1 style="font-size: 30px;font-family: cursive;text-align: center; color:mediumslateblue;">Welcome to Abhikya's Beauty Parlour</h1><br>
+      <!--navigation bar start-->
+      <div class="navbar">
+      <ul class="nav">
+      <div class="navbarright">
+        <li><a class ="active" href="BeautyParlour.html" > Home</a></li>
+        <li><a  href="./Gallery/Gallery.html" >Gallery</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li class ="dropdown"><a href="Services.html" class="dropbtn">Services</a>
+         <div class="dropdown-content" style="color:darkgreen;">
+             <a href="HairSer.html">Hair</a>
+             <a href="Eyecare.html"> Face </a>
+             <a href="Nailser.html" >Nails</a>
+             <a href="FootCare.html" >Foot</a>
+             <a href="Bodymassage.html" >Body Massage</a>
+             <a href="Waxing.html">Waxing</a>
+        
+         </div>
+         <li><a href="Bookings.html">Bookings</a></li>
+         <li><a href="About.html">About</a></li>  
+      </li>
+      </div>
+    </ul>
+    </div>
+    <!--navigation bar end-->
+
+
+    <br><br><br><br><br><br><br>
+    
+    <!--Image slider start-->
+    <div class="gallery">
+      <img
+        src="https://c1.wallpaperflare.com/preview/194/674/469/ceiling-chairs-indoors-inside.jpg"
+        class="gallery__photo gallery__photo--p1" style="width:400px;height:200px"
+        alt=""
+      />
+      <img
+        src="https://image.wedmegood.com/resized/540X/uploads/member/1105722/1583915477_87675837_185279359557202_6688683446304243712_n.jpg"
+        class="gallery__photo gallery__photo--p2" style="width:400px;height:200px"
+        alt=""
+      />
+      <img
+        src="https://media.istockphoto.com/id/1349298950/photo/close-up-of-unrecognizable-hairdresser-cutting-a-female-customer%C3%A2s-hair.jpg?b=1&s=170667a&w=0&k=20&c=TAJYkaKd0fqXUpzDYjV_SySzfBcapHsgdXd1GUw4qV0="
+        class="gallery__photo gallery__photo--p3" style="width:400px;height:200px"
+        alt=""
+      />
+      <img
+        src="https://media.istockphoto.com/id/1459170400/photo/the-manicurist-is-making-new-nails-manicure-beauty-treatment-and-hand-care.jpg?b=1&s=170667a&w=0&k=20&c=NhaRJ-7pmoIRC-rj1Q9Jrr4La5K2KIlWBhm3CcJ8VyU="
+        class="gallery__photo gallery__photo--p4" style="width:400px;height:200px"
+        alt=""
+      />
+      
+    </div>
+
+  
+
+   
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+   <!--Image slider end-->
+
+   <!--portfolio start-->
+         <div><center><h1 style="font-size: 30px; font-weight: bold; color: maroon;">
+            Our Portfolio</h1></center><div style="color:darkred;font-weight: bold;">
+            <p class="portfolio">
+                   <pre><center>
+                   Look Special on your Wedding with Top Makeup Artists in India.
+                   Book the best bridal makeup package from top & verified bridal
+                   makeup artists in All Over India.</center></pre>
+                 <p style="text-decoration: underline; font-size: 20px;text-align: center; margin-left: 20px;">
+                  Bridal Makeup/ Birthday Makeup/ Party Makeup</p></p></div>
+         </div><br><br>
+<!--portfolio end-->
+
+<!-- about service -->
+         <div>
+            <center><h1 style="font-size: 30px; font-weight: bold; color: blue;">
+               Beauty Services At Home</h1></center>
+               <div class="homeservice"  style="color:rgb(48, 14, 92)">
+               <p class="para">
+                      <pre ><center>
+                        Home Salon vision is to Save your time and effort by booking home Beauty services at
+                        home We connect you with best beauty stylist in Hyderabad near your home so that you
+                        get the quality of service that you are so used to at your most favorite Abhikhya's 
+                        Beauty Parlour but now at comfort of your home.Facial Waxing,Party Makeup,Best Bridal
+                        Makeup.We also provides Best offers and packages for beauty salon service where more 
+                        than two services are club together at one price and user has the option  to select 
+                        any of them and avail salon services at your doorstep.</center></pre></p></div>
+         </div>
+<br><br> <div class="footer" style="color:darkblue;font-weight: bold; font-size: 18px; font-family: cursive;">
+         <div class="row " style="width:100%;">
+    <div class="column" style="width: 36%;" >
+      <h2 style="background-color: grey;margin-left: 30px; margin-right: 50px;padding-left: 35px;padding-right: 50px;">About</h2>
+      <p style="background-color: grey;margin-right: 30px;padding-left: 35px;padding-right: 50px;" >We sincerely believe that it will be vainglorious to talk 
+        about us,
+         especially the thought leaders;
+        who conceived and successfully implemented this endeavour of
+         providing professional doorstep beauty service to women ,
+        25+ years back in the city of Hyderabad</p>
+    </div>
+    <div class="column" style="background-color:grey; ">
+      <h2 style="background-color: grey; align-items: center;margin-right: 100px;padding-left: 110px;">Menu</h2>
+      <p style="background-color: grey;"><ul style="background-color: grey;padding-left: 110px;">
+        <li style="background-color: grey;">Home</li><br>
+        <li style="background-color: grey;">Gallery</li><br>
+        <li style="background-color: grey;">Products</li><br>
+        <li style="background-color: grey;">Services</li><br>
+        <li style="background-color: grey;">Bookings</li><br>
+        <li style="background-color: grey;">About</li>
+        </ul></p>
+    </div>
+    <div class="column" style="background-color:grey;">
+      <h2 style="background-color: grey;padding-left: 0px; padding-right: 0px;">Contact</h2>
+      <p style="background-color: grey;padding-left: 0px;padding-right: 0px;"><i class="bi bi-shop"></i> #5-45-27/C, Durganagar Colony, Dilsukhnagar, Hyderabad, Telangana 500060<br>
+        <i class="bi bi-telephone"></i>+91 9000444944<br>
+        <i class="bi bi-envelope"></i>: Abhikhya123@gmail.com</p>
+    </div>
+  </div>
+  </div>
+   <!--footer-->
+
+
+   
+</body>
+</html>
